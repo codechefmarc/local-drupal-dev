@@ -1,0 +1,9 @@
+name: reading-rating-dev
+recipe: drupal10
+config:
+  webroot: web
+tooling:
+  drush:
+    service: appserver
+    env:
+      DRUSH_OPTIONS_URI: "https://reading-rating-dev.lndo.site"
