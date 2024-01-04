@@ -2,6 +2,8 @@ name: reading-rating-dev
 recipe: drupal10
 config:
   webroot: web
+  conf:
+    php: php.ini
 tooling:
   drush:
     service: appserver
