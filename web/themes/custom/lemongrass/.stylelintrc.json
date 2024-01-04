@@ -1,0 +1,35 @@
+{
+  "extends": [
+    "stylelint-config-standard"
+  ],
+  "plugins": [
+    "stylelint-prettier"
+  ],
+  "customSyntax": "postcss-scss",
+  "rules": {
+    "at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": [
+          "content",
+          "each",
+          "else",
+          "extend",
+          "forward",
+          "function",
+          "if",
+          "import",
+          "include",
+          "mixin",
+          "return",
+          "use"
+        ]
+      }
+    ],
+    "function-no-unknown": null,
+    "value-keyword-case": null,
+    "prettier/prettier": true,
+    "selector-class-pattern": null,
+    "selector-not-notation": null
+  }
+}

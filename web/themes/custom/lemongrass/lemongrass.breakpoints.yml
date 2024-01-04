@@ -1,0 +1,15 @@
+lemongrass.small:
+  label: small
+  mediaQuery: 'all and (min-width: 25em)'
+lemongrass.small-med:
+  label: small-med
+  mediaQuery: 'all and (min-width: 26em)'
+lemongrass.small-large:
+  label: small-large
+  mediaQuery: 'all and (min-width: 41em)'
+lemongrass.medium:
+  label: medium
+  mediaQuery: 'all and (min-width: 48em)'
+lemongrass.large:
+  label: large
+  mediaQuery: 'all and (min-width: 61.25em)'

@@ -1,0 +1,97 @@
+/* Menu media */
+$main-menu-medium: $medium;
+
+/* Nav */
+.main-nav {
+  display: none;
+
+  @include medium {
+    display: block;
+  }
+
+  &--open {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 110px;
+    display: block;
+    overflow-y: scroll;
+    width: 100%;
+    background-color: clr(background);
+
+    @include medium {
+      position: relative;
+      left: auto;
+      right: auto;
+      top: auto;
+      width: auto;
+      overflow-y: visible;
+    }
+  }
+}
+
+/* UL */
+.main-menu {
+  @include list-reset;
+
+  position: relative;
+  z-index: 10;
+  border-bottom: 1px solid;
+
+  @include medium {
+    border-bottom: none;
+  }
+}
+
+/*
+ * Sub Navigation
+ */
+
+/* UL (Nested) */
+.main-menu--sub {
+  height: 0;
+  overflow: hidden;
+  width: 100%;
+  border-bottom: none;
+  background-color: clr(muted);
+
+  @include medium {
+    position: absolute;
+    left: 0;
+    top: 55px;
+    z-index: 1;
+    display: none;
+    height: auto;
+    overflow: visible;
+    padding: $space 0;
+    width: 315px;
+    background-color: clr(accent-high);
+    font-size: 0.9rem;
+  }
+
+  &:hover {
+    .main-menu__link--sub {
+      @include medium {
+        color: clr(highlight);
+
+        &.active,
+        &:active,
+        &:hover {
+          background-color: clr(accent-high);
+          color: clr(background);
+        }
+      }
+    }
+  }
+
+  /* See main-menu.js */
+  &-open {
+    height: auto;
+  }
+}
+
+.main-menu--sub-2 {
+  @include medium {
+    display: none; /* Never shown on large screens */
+  }
+}
