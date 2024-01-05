@@ -1,4 +1,4 @@
-name: reading-rating-dev
+name: local-drupal-dev
 recipe: drupal10
 config:
   webroot: web
@@ -8,4 +8,4 @@ tooling:
   drush:
     service: appserver
     env:
-      DRUSH_OPTIONS_URI: "https://reading-rating-dev.lndo.site"
+      DRUSH_OPTIONS_URI: "https://local-drupal-dev.lndo.site"
