@@ -62,3 +62,4 @@
 /drupal
 
 .lando.local.yml
+/web/modules/contrib
