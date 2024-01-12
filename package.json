@@ -1,0 +1,12 @@
+{
+  "name": "local-drupal-dev",
+  "version": "1.0.0",
+  "description": "Local scripts to aid in spinup",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "setup": "./scripts/setup.sh"
+  },
+  "author": "Marc Berger",
+  "license": "ISC"
+}
