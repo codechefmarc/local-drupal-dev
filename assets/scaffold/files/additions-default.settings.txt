@@ -1,7 +1,7 @@
 /**
  * Set config sync directory.
  */
-$settings['config_sync_directory'] = '/config/sync';
+$settings['config_sync_directory'] = '../config/sync';
 
 /**
  * Load local development override configuration.
