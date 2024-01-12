@@ -53,7 +53,8 @@
             "file-mapping": {
               "[web-root]/sites/default/default.settings.php": {
                 "append": "assets/scaffold/files/additions-default.settings.txt"
-              }
+              },
+              "[web-root]/sites/settings.local.php": "assets/scaffold/files/settings.local.php"
             }
         },
         "installer-paths": {
