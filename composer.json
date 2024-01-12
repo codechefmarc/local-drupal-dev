@@ -54,7 +54,12 @@
               "[web-root]/sites/default/default.settings.php": {
                 "append": "assets/scaffold/files/additions-default.settings.txt"
               },
-              "[web-root]/sites/settings.local.php": "assets/scaffold/files/settings.local.php"
+              "[web-root]/sites/settings.local.php": "assets/scaffold/files/settings.local.php",
+              "[web-root]/sites/development.services.yml": {
+                "mode": "replace",
+                "path": "assets/scaffold/files/development.services.yml",
+                "overwrite": false
+              }
             }
         },
         "installer-paths": {
