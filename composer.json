@@ -49,7 +49,12 @@
             },
             "excludes": [
               "sites/development.services.yml"
-            ]
+            ],
+            "file-mapping": {
+              "[web-root]/sites/default/default.settings.php": {
+                "append": "assets/scaffold/files/additions-default.settings.txt"
+              }
+            }
         },
         "installer-paths": {
             "web/core": [

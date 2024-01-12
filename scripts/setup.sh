@@ -10,6 +10,7 @@ sed -i '' "s/local-drupal-dev/$site_name/g" .lando.yml
 
 # Lando init
 lando rebuild -y
+lando start
 
 #Composer install
 lando composer install
