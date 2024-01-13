@@ -1,6 +1,6 @@
 # Replace Lando site URL and name
-read -p "What is the machine name of your local site? [site-name]: " site_name
-site_name=${site_name:-site-name}
+read -p "What is the machine name of your local site? [$(basename "$PWD")]: " site_name
+site_name=${site_name:-$(basename "$PWD")}
 sed -i '' "s/local-drupal-dev/$site_name/g" .lando.yml
 
 # Change origin of git repo
