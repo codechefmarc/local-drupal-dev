@@ -1,0 +1,41 @@
+name: Local Drupal Dev Profile
+type: profile
+description: 'Install profile for spinning up local dev quickly.'
+core_version_requirement: '^9 || ^10'
+install:
+  - admin_toolbar_tools
+  - announcements_feed
+  - automated_cron
+  - big_pipe
+  - block
+  - block_content
+  - breakpoint
+  - ckeditor5
+  - components
+  - config
+  - contextual
+  - datetime
+  - dblog
+  - devel
+  - dynamic_page_cache
+  - editor
+  - emulsify_twig
+  - field_ui
+  - file
+  - help
+  - history
+  - image
+  - media_library
+  - menu_link_content
+  - menu_ui
+  - node
+  - options
+  - page_cache
+  - path
+  - taxonomy
+  - toolbar
+  - views
+  - views_ui
+themes:
+  - claro
+  - olivero
