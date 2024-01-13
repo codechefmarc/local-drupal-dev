@@ -14,3 +14,6 @@ lando start
 
 #Composer install
 lando composer install
+lando drush si local_drupal_dev_profile
+lando drush cr
+lando drush uli
