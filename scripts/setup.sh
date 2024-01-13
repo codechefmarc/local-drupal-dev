@@ -14,6 +14,6 @@ lando start
 
 #Composer install
 lando composer install
-lando drush si local_drupal_dev_profile
+lando drush si local_drupal_dev_profile --db-url=mysql://drupal10:drupal10@database:3306/drupal10
 lando drush cr
 lando drush uli
