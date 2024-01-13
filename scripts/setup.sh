@@ -12,8 +12,15 @@ git remote set-url origin $git_url
 lando rebuild -y
 lando start
 
-#Composer install
+#Composer and site pofile install
 lando composer install
 lando drush si local_drupal_dev_profile --db-url=mysql://drupal10:drupal10@database:3306/drupal10 -y
+
+# set site name
+site_title="$(print -r -- ${(C)site_name})"
+site_title="${site_title//-/ }"
+lando drush cset system.site name "$site_title" -y
+
+# Cleanup
 lando drush cr
 lando drush uli
