@@ -1,3 +1,4 @@
+#!/bin/zsh
 # Replace Lando site URL and name
 read -p "What is the machine name of your local site? [$(basename "$PWD")]: " site_name
 site_name=${site_name:-$(basename "$PWD")}
