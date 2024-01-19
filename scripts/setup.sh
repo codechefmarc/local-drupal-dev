@@ -1,11 +1,11 @@
 #!/bin/zsh
 # Replace Lando site URL and name
-read -p "site_name?What is the machine name of your local site? [$(basename "$PWD")]: "
+read "site_name?What is the machine name of your local site? [$(basename "$PWD")]: "
 site_name=${site_name:-$(basename "$PWD")}
 sed -i '' "s/local-drupal-dev/$site_name/g" .lando.yml
 
 # Change origin of git repo
-read -p "git_url?What is the git URL for this new site? [git@github.com:codechefmarc/$site_name.git]: "
+read "git_url?What is the git URL for this new site? [git@github.com:codechefmarc/$site_name.git]: "
 git_url=${git_url:-"git@github.com:codechefmarc/$site_name.git"}
 git remote set-url origin $git_url
 
