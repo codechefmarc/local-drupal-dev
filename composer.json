@@ -16,6 +16,7 @@
     ],
     "require": {
         "composer/installers": "^2.0",
+        "cweagans/composer-patches": "^1.7",
         "drupal/admin_toolbar": "^3.4",
         "drupal/components": "^3.0@beta",
         "drupal/core-composer-scaffold": "^10.2",
@@ -24,6 +25,7 @@
         "drupal/devel": "^5.1",
         "drupal/devel_kint_extras": "^1.1",
         "drupal/emulsify_twig": "^4.0",
+        "drupal/token": "^1.13",
         "drush/drush": "^12.4"
     },
     "conflict": {
@@ -38,7 +40,8 @@
             "drupal/core-project-message": true,
             "phpstan/extension-installer": true,
             "dealerdirect/phpcodesniffer-composer-installer": true,
-            "php-http/discovery": true
+            "php-http/discovery": true,
+            "cweagans/composer-patches": true
         },
         "sort-packages": true
     },

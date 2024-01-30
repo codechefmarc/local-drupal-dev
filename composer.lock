@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4bd4e7c097829d0684f5ebe670209d92",
+    "content-hash": "e7ac991250ed0b7d99dab0ede2d6cf10",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -865,6 +865,54 @@
             "time": "2022-12-06T17:57:16+00:00"
         },
         {
+            "name": "cweagans/composer-patches",
+            "version": "1.7.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cweagans/composer-patches.git",
+                "reference": "e190d4466fe2b103a55467dfa83fc2fecfcaf2db"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cweagans/composer-patches/zipball/e190d4466fe2b103a55467dfa83fc2fecfcaf2db",
+                "reference": "e190d4466fe2b103a55467dfa83fc2fecfcaf2db",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0 || ^2.0",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "composer/composer": "~1.0 || ~2.0",
+                "phpunit/phpunit": "~4.6"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "cweagans\\Composer\\Patches"
+            },
+            "autoload": {
+                "psr-4": {
+                    "cweagans\\Composer\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Cameron Eagans",
+                    "email": "me@cweagans.net"
+                }
+            ],
+            "description": "Provides a way to patch Composer packages.",
+            "support": {
+                "issues": "https://github.com/cweagans/composer-patches/issues",
+                "source": "https://github.com/cweagans/composer-patches/tree/1.7.3"
+            },
+            "time": "2022-12-20T22:53:13+00:00"
+        },
+        {
             "name": "dflydev/dot-access-data",
             "version": "v3.0.2",
             "source": {
@@ -1502,68 +1550,6 @@
             }
         },
         {
-            "name": "drupal/clientside_validation",
-            "version": "4.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/clientside_validation.git",
-                "reference": "4.0.2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/clientside_validation-4.0.2.zip",
-                "reference": "4.0.2",
-                "shasum": "bfaf0fa81d645427c1b3ccfd2d5e493a10b7f483"
-            },
-            "require": {
-                "drupal/core": "^9.4 || ^10.0",
-                "php": ">=7.4.0"
-            },
-            "require-dev": {
-                "drupal/clientside_validation_demo": "*",
-                "drupal/clientside_validation_jquery": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "4.0.2",
-                    "datestamp": "1676011269",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "attiks",
-                    "homepage": "https://www.drupal.org/user/105002"
-                },
-                {
-                    "name": "Jelle_S",
-                    "homepage": "https://www.drupal.org/user/829198"
-                },
-                {
-                    "name": "joseph.olstad",
-                    "homepage": "https://www.drupal.org/user/1321830"
-                },
-                {
-                    "name": "nikunjkotecha",
-                    "homepage": "https://www.drupal.org/user/694082"
-                }
-            ],
-            "description": "This module adds clientside validation",
-            "homepage": "https://www.drupal.org/project/clientside_validation",
-            "support": {
-                "source": "https://git.drupalcode.org/project/clientside_validation",
-                "issues": "https://drupal.org/project/issues/clientside_validation"
-            }
-        },
-        {
             "name": "drupal/components",
             "version": "3.0.0-beta3",
             "source": {
@@ -2128,30 +2114,35 @@
             }
         },
         {
-            "name": "drupal/field_validation",
-            "version": "1.1.0",
+            "name": "drupal/token",
+            "version": "1.13.0",
             "source": {
                 "type": "git",
-                "url": "https://git.drupalcode.org/project/field_validation.git",
-                "reference": "8.x-1.1"
+                "url": "https://git.drupalcode.org/project/token.git",
+                "reference": "8.x-1.13"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/field_validation-8.x-1.1.zip",
-                "reference": "8.x-1.1",
-                "shasum": "c9998e29523373aac43095632b2b2b0992bc497b"
+                "url": "https://ftp.drupal.org/files/projects/token-8.x-1.13.zip",
+                "reference": "8.x-1.13",
+                "shasum": "f2a074b51726de3727c1d900237d6d471806a4d2"
             },
             "require": {
-                "drupal/core": "^9 || ^10"
+                "drupal/core": "^9.2 || ^10"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.1",
-                    "datestamp": "1690428219",
+                    "version": "8.x-1.13",
+                    "datestamp": "1697885927",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": ">=9"
                     }
                 }
             },
@@ -2161,18 +2152,34 @@
             ],
             "authors": [
                 {
-                    "name": "g089h515r806",
-                    "homepage": "https://www.drupal.org/user/174740"
+                    "name": "Berdir",
+                    "homepage": "https://www.drupal.org/user/214652"
                 },
                 {
-                    "name": "manuel.adan",
-                    "homepage": "https://www.drupal.org/user/516420"
+                    "name": "Dave Reid",
+                    "homepage": "https://www.drupal.org/user/53892"
+                },
+                {
+                    "name": "eaton",
+                    "homepage": "https://www.drupal.org/user/16496"
+                },
+                {
+                    "name": "fago",
+                    "homepage": "https://www.drupal.org/user/16747"
+                },
+                {
+                    "name": "greggles",
+                    "homepage": "https://www.drupal.org/user/36762"
+                },
+                {
+                    "name": "mikeryan",
+                    "homepage": "https://www.drupal.org/user/4420"
                 }
             ],
-            "description": "Provides customizable field validation rules.",
-            "homepage": "https://www.drupal.org/project/field_validation",
+            "description": "Provides a user interface for the Token API, some missing core tokens.",
+            "homepage": "https://www.drupal.org/project/token",
             "support": {
-                "source": "https://git.drupalcode.org/project/field_validation"
+                "source": "https://git.drupalcode.org/project/token"
             }
         },
         {
