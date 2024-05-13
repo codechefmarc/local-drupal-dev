@@ -3,7 +3,7 @@ This repo is a starting point to quickly spin up a local Drupal development envi
 
 * Devel
 * Admin Toolbar
-* Emulsify tooling - but not Emulsify itself for ease of testing new installs of Emulsify
+* [Emulsify](https://www.emulsify.info) tooling - but not Emulsify itself for ease of testing new installs of Emulsify
 
 # Getting Started
 
