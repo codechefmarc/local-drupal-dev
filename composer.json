@@ -24,7 +24,7 @@
         "drupal/core-recommended": "^10.2",
         "drupal/devel": "^5.1",
         "drupal/devel_kint_extras": "^1.1",
-        "drupal/emulsify_twig": "^4.0",
+        "drupal/emulsify": "^5.0",
         "drupal/token": "^1.13",
         "drush/drush": "^12.4"
     },
@@ -43,7 +43,10 @@
             "php-http/discovery": true,
             "cweagans/composer-patches": true
         },
-        "sort-packages": true
+        "sort-packages": true,
+        "platform": {
+          "php": "8.3"
+        }
     },
     "extra": {
         "drupal-scaffold": {
