@@ -26,3 +26,4 @@ services:
     xdebug: true
     config:
       php: .vscode/php.ini
+    type: php:8.3

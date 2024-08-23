@@ -19,7 +19,7 @@ install:
   - devel
   - dynamic_page_cache
   - editor
-  - emulsify_twig
+  - emulsify_tools
   - field_ui
   - file
   - help
