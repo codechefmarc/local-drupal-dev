@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "325b8db371c834d42e6845c5a462262a",
+    "content-hash": "251eb156dfb30d4cb4da4a3c36d60cb2",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2057,30 +2057,103 @@
             }
         },
         {
-            "name": "drupal/emulsify_twig",
-            "version": "4.0.0",
+            "name": "drupal/emulsify",
+            "version": "5.1.0",
             "source": {
                 "type": "git",
-                "url": "https://git.drupalcode.org/project/emulsify_twig.git",
-                "reference": "4.0.0"
+                "url": "https://git.drupalcode.org/project/emulsify.git",
+                "reference": "5.1.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/emulsify_twig-4.0.0.zip",
-                "reference": "4.0.0",
-                "shasum": "291883db32ca3f751a9501ec2aed77d2174d38e2"
+                "url": "https://ftp.drupal.org/files/projects/emulsify-5.1.0.zip",
+                "reference": "5.1.0",
+                "shasum": "560ab7608293a05ac33b61d385bf734fb4529578"
             },
             "require": {
-                "drupal/core": "^9 || ^10"
+                "drupal/components": "^3.0@beta",
+                "drupal/core": "^10 || ^11",
+                "drupal/emulsify_tools": "^1.0"
+            },
+            "type": "drupal-theme",
+            "extra": {
+                "drupal": {
+                    "version": "5.1.0",
+                    "datestamp": "1721657272",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^10 || ^11"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-only"
+            ],
+            "authors": [
+                {
+                    "name": "Randy Oest",
+                    "homepage": "https://www.drupal.org/user/609802",
+                    "email": "randy@fourkitchens.com"
+                },
+                {
+                    "name": "Callin Mullaney",
+                    "homepage": "https://www.drupal.org/user/1460062",
+                    "email": "callin@fourkitchens.com"
+                },
+                {
+                    "name": "callinmullaney",
+                    "homepage": "https://www.drupal.org/user/2532054"
+                },
+                {
+                    "name": "ccjjmartin",
+                    "homepage": "https://www.drupal.org/user/3210801"
+                },
+                {
+                    "name": "evanmwillhite",
+                    "homepage": "https://www.drupal.org/user/562168"
+                },
+                {
+                    "name": "generalredneck",
+                    "homepage": "https://www.drupal.org/user/368854"
+                }
+            ],
+            "description": "The official Drupal 10 base theme for Emulsify that generates custom themes with Storybook development + Webpack Build",
+            "homepage": "http://emulsify.info",
+            "support": {
+                "source": "https://git.drupalcode.org/project/emulsify"
+            }
+        },
+        {
+            "name": "drupal/emulsify_tools",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/emulsify_tools.git",
+                "reference": "1.0.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/emulsify_tools-1.0.1.zip",
+                "reference": "1.0.1",
+                "shasum": "62fee8eb6ee3f00e0103ee53ebf48d7549365aa4"
+            },
+            "require": {
+                "drupal/core": "^10 || ^11"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "4.0.0",
-                    "datestamp": "1676582809",
+                    "version": "1.0.1",
+                    "datestamp": "1717784843",
                     "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
                     }
                 }
             },
@@ -2094,38 +2167,18 @@
                     "homepage": "https://www.drupal.org/user/609802"
                 },
                 {
-                    "name": "americkson",
-                    "homepage": "https://www.drupal.org/user/1460062"
-                },
-                {
                     "name": "callinmullaney",
                     "homepage": "https://www.drupal.org/user/2532054"
                 },
                 {
-                    "name": "ccjjmartin",
-                    "homepage": "https://www.drupal.org/user/3210801"
-                },
-                {
                     "name": "codechefmarc",
                     "homepage": "https://www.drupal.org/user/2952573"
-                },
-                {
-                    "name": "evanmwillhite",
-                    "homepage": "https://www.drupal.org/user/562168"
-                },
-                {
-                    "name": "fk_bender",
-                    "homepage": "https://www.drupal.org/user/3539842"
-                },
-                {
-                    "name": "generalredneck",
-                    "homepage": "https://www.drupal.org/user/368854"
                 }
             ],
-            "description": "Provides Twig functions for use with Emulsify",
+            "description": "Provides Twig functions and subtheme generation for use with Emulsify",
             "homepage": "http://emulsify.info",
             "support": {
-                "source": "https://git.drupalcode.org/project/emulsify_twig"
+                "source": "https://git.drupalcode.org/project/emulsify_tools"
             }
         },
         {
@@ -6888,7 +6941,7 @@
     "platform": [],
     "platform-dev": [],
     "platform-overrides": {
-        "php": "8.2"
+        "php": "8.3"
     },
     "plugin-api-version": "2.6.0"
 }
