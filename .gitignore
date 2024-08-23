@@ -64,3 +64,4 @@
 .lando.local.yml
 /web/modules/contrib
 /web/themes/contrib
+/web/themes/custom/*/node_modules
