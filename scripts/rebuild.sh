@@ -3,8 +3,8 @@
 read "site_name?What is the machine name of your local site? [$(basename "$PWD")]: "
 site_name=${site_name:-$(basename "$PWD")}
 
-#Composer and site pofile install
-lando composer install
+#Composer and site profile install
+lando composer update
 lando drush si local_drupal_dev_profile --db-url=mysql://drupal10:drupal10@database:3306/drupal10 -y
 
 # set site name
