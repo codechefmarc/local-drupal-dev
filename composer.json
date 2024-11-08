@@ -24,7 +24,7 @@
         "drupal/core-recommended": "^10.3",
         "drupal/devel": "^5.1",
         "drupal/devel_kint_extras": "^1.1",
-        "drupal/emulsify": "^5.0",
+        "drupal/emulsify": "^5.3",
         "drupal/token": "^1.13",
         "drush/drush": "^12.4"
     },
