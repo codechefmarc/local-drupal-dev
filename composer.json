@@ -58,7 +58,8 @@
             ],
             "file-mapping": {
               "[web-root]/sites/default/settings.php": {
-                "append": "assets/scaffold/files/additions-default.settings.txt"
+                "append": "assets/scaffold/files/additions-default.settings.txt",
+                "force-append": true
               },
               "[web-root]/sites/default/settings.local.php": "assets/scaffold/files/settings.local.php",
               "[web-root]/sites/development.services.yml": {

@@ -23,8 +23,8 @@ ddev drush recipe ../recipes/local-drupal-dev
 # set site name.
 site_title="$(print -r -- ${(C)site_name})"
 site_title="${site_title//-/ }"
-lando drush cset system.site name "$site_title" -y
+ddev drush cset system.site name "$site_title" -y
 
 # Cleanup.
-lando drush cr
-lando drush uli
+ddev drush cr
+ddev drush uli
