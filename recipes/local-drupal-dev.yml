@@ -1,0 +1,8 @@
+name: 'Local Drupal Dev Recipe'
+description: 'Custom recipe for installing initial config for local Drupal development.'
+
+install:
+  - admin_toolbar_tools
+  - devel
+  - devel_kint_extras
+  - emulsify_tools
