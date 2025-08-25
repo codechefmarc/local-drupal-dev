@@ -4,5 +4,5 @@ description: 'Custom recipe for installing initial config for local Drupal devel
 install:
   - admin_toolbar_tools
   - devel
-  - kint-kint
+  - kint
   - emulsify_tools
