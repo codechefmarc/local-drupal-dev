@@ -6,3 +6,9 @@ install:
   - devel
   - kint
   - emulsify_tools
+
+config:
+  actions:
+    devel.settings:
+      simple_config_update:
+        devel_dumper: 'kint'
