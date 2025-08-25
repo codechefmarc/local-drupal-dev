@@ -17,16 +17,15 @@
     "require": {
         "composer/installers": "^2.0",
         "cweagans/composer-patches": "^1.7",
-        "drupal/admin_toolbar": "^3.4",
-        "drupal/components": "^3.0@beta",
-        "drupal/core-composer-scaffold": "^10.4",
-        "drupal/core-project-message": "^10.4",
-        "drupal/core-recommended": "^10.4",
-        "drupal/devel": "^5.1",
+        "drupal/components": "^3.1",
+        "drupal/core-composer-scaffold": "^11",
+        "drupal/core-project-message": "^11",
+        "drupal/core-recommended": "^11",
+        "drupal/devel": "^5.4",
         "drupal/devel_kint_extras": "^1.1",
-        "drupal/emulsify": "^5.3",
-        "drupal/token": "^1.13",
-        "drush/drush": "^12.4"
+        "drupal/emulsify": "^6.0",
+        "drupal/token": "^1.15",
+        "drush/drush": "^13"
     },
     "conflict": {
         "drupal/drupal": "*"
