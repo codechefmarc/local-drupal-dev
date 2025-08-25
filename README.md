@@ -1,9 +1,19 @@
 # Local Drupal Dev
 This repo is a starting point to quickly spin up a local Drupal development environment that is ready to use for Drupal contributions. It includes:
 
-* Devel
+* Drupal 11
+* Drush 13
 * Admin Toolbar
 * [Emulsify](https://www.emulsify.info) tooling - but not Emulsify itself for ease of testing new installs of Emulsify
+* Devel
+* Kint
+* Xdebug enabled
+* Local Twig debugging enabled
+
+# Requirements
+
+* [DDEV](https://docs.ddev.com/en/stable/)
+* [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 
 # Getting Started
 
@@ -13,7 +23,7 @@ This repo is a starting point to quickly spin up a local Drupal development envi
 4. One of the questions is to change the default git repo for push - this allows you to push any changes made to your own repo
 
 # Refresh Local
-1. Run `npm run refresh` to rebuild your local from scratch. This command will also re-run `composer install` as well.
+1. Run `npm run refresh` to rebuild your local from scratch. This command will also run `composer update` as well.
 
 # Retrieve updates from the original repo
 1. There is now a git remote called `original` to more easily retrieve updates from the original repo.
