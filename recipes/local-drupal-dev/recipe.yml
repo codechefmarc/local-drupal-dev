@@ -5,6 +5,7 @@ install:
   - admin_toolbar_tools
   - devel
   - kint
+  - components
   - emulsify_tools
 
 config:
